@@ -34,7 +34,7 @@ export async function postByCategory(id) {
 
 //Post Details
 export async function postDetails(id) {
-  let res = await axios.get(BaseURL + "/post-categories" + id);
+  let res = await axios.get(BaseURL + "/post-details" + id);
   if (res.status == 200) {
     return res.data;
   } else {
