@@ -36,13 +36,12 @@ const LayOut = (props) => {
                                 />
                             </svg>
                         </div>
-                        <ul
-                            tabIndex={0}
-                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-                        >
+                        <ul tabIndex={0}
+                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><NavLink to={"/"}>Home</NavLink></li>
                             {
                                 categories.map((item, index) => {
-                                    return <li><NavLink to={"/Category/"+item['id']}>{item['name']}</NavLink></li>
+                                    return <li><NavLink to={"/Category/" + item['id']}>{item['name']}</NavLink></li>
                                 })
                             }
                         </ul>
@@ -51,9 +50,10 @@ const LayOut = (props) => {
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
+                        <li><NavLink to={"/"}>Home</NavLink></li>
                         {
                             categories.map((item, index) => {
-                                return <li><NavLink to={"/Category/"+item['id']}>{item['name']}</NavLink></li>
+                                return <li><NavLink to={"/Category/" + item['id']}>{item['name']}</NavLink></li>
                             })
                         }
                     </ul>
