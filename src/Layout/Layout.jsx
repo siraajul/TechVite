@@ -17,7 +17,7 @@ const LayOut = (props) => {
 
     return (
         <div>
-            <div className="navbar shadow bg-base-100">
+            <div className="navbar fixed z-50 top-0 shadow bg-base-100">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
