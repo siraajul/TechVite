@@ -2,10 +2,11 @@ import LayOut from "../Layout/Layout";
 import BlogList from "../Components/BlogList.jsx";
 import {useEffect, useState} from "react";
 import {postLatest} from "../API/APIRequest.jsx";
+import Loader from "../Components/Loader.jsx";
 
 const HomePage = () => {
 
-    let [list, SetList] = useState([]);
+    let [list, SetList] = useState(null);
 
     useEffect(() => {
         (async () => {
@@ -18,7 +19,7 @@ const HomePage = () => {
 
     return (
         <LayOut>
-            <BlogList list={list}/>
+            {list === null ? <Loader/> : <BlogList list={list}/>}
         </LayOut>
     );
 };
