@@ -9,7 +9,7 @@ const Footer = () => {
                     <div>
                         <h4 className="text-lg font-bold mb-4">About Us</h4>
                         <p className="text-sm text-gray-400">
-                            We provide digital solutions to empower businesses with innovative tools and strategies.
+                            All Rights Reserved
                         </p>
                     </div>
 
