@@ -7,7 +7,6 @@ const Loader = () => {
                 <div className="flex items-center justify-center h-screen">
                     <div className="text-center">
                         <progress className="progress w-56">
-
                         </progress>
                     </div>
                 </div>
