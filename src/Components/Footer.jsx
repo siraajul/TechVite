@@ -77,7 +77,7 @@ const Footer = () => {
 
                 {/* Footer Bottom */}
                 <div className="mt-8 border-t border-gray-700 pt-4 text-center text-sm text-gray-500">
-                    &copy; {new Date().getFullYear()} GeekSSort. All Rights Reserved.
+                    &copy; {new Date().getFullYear()} TechVite. All Rights Reserved.
                 </div>
             </div>
         </footer>
